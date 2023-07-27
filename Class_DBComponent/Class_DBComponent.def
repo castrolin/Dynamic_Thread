@@ -1,0 +1,6 @@
+; DBComponent.def : 宣告 DLL 的模組參數。
+
+LIBRARY      "Class_DBComponent"
+
+EXPORTS
+    ; 明確匯出可置於此

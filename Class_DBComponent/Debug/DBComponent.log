@@ -1,0 +1,32 @@
+﻿已經開始建置於 2023/7/25 下午 02:39:47。
+     1>節點 2 (build 目標) 上的專案 "D:\專案\0140_Test_mulitrhead_dynamic\Dynamic_MultiThread\MainFrame\Class_DBComponent\DBComponent.vcxproj"。
+     1>InitializeBuildStatus:
+         由於指定了 "AlwaysCreate"，因此正在建立 "Debug\Class_DBComponent.unsuccessfulbuild"。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _AFXEXT /D _WINDLL /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\Class_DBComponent.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _AFXEXT /D _WINDLL /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Class_DBComponent.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ADODatabase.cpp Class_DBComponent.cpp
+         Class_DBComponent.cpp
+         ADODatabase.cpp
+         正在產生程式碼...
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _AFXEXT /D _WINDLL /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+         dllmain.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _AFXDLL /l"0x0404" /IDebug\ /nologo /fo"Debug\DBComponent.res" DBComponent.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\專案\0140_Test_mulitrhead_dynamic\Dynamic_MultiThread\MainFrame\Debug\Class_DBComponent.dll" /INCREMENTAL /NOLOGO /LIBPATH:"D:\專案\0140_Test_mulitrhead_dynamic\Dynamic_MultiThread\MainFrame\Debug\\" /DEF:".\Class_DBComponent.def" /MANIFEST:NO /DEBUG /PDB:"D:\專案\0140_Test_mulitrhead_dynamic\Dynamic_MultiThread\MainFrame\Debug\Class_DBComponent.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\專案\0140_Test_mulitrhead_dynamic\Dynamic_MultiThread\MainFrame\Debug\Class_DBComponent.lib" /MACHINE:X86 /DLL Debug\DBComponent.res
+         Debug\ADODatabase.obj
+         Debug\Class_DBComponent.obj
+         Debug\dllmain.obj
+         Debug\stdafx.obj
+         "D:\專案\0140_Test_mulitrhead_dynamic\Dynamic_MultiThread\MainFrame\Debug\Class_Logsystem.lib"
+            正在建立程式庫 D:\專案\0140_Test_mulitrhead_dynamic\Dynamic_MultiThread\MainFrame\Debug\Class_DBComponent.lib 和物件 D:\專案\0140_Test_mulitrhead_dynamic\Dynamic_MultiThread\MainFrame\Debug\Class_DBComponent.exp
+         DBComponent.vcxproj -> D:\專案\0140_Test_mulitrhead_dynamic\Dynamic_MultiThread\MainFrame\Debug\Class_DBComponent.dll
+       FinalizeBuildStatus:
+         正在刪除檔案 "Debug\Class_DBComponent.unsuccessfulbuild"。
+         正在變更時間戳記 "Debug\Class_DBComponent.lastbuildstate"。
+     1>專案 "D:\專案\0140_Test_mulitrhead_dynamic\Dynamic_MultiThread\MainFrame\Class_DBComponent\DBComponent.vcxproj" (build 目標) 建置完成。
+
+建置成功。
+
+經過時間 00:00:05.11
