@@ -1,0 +1,55 @@
+﻿已經開始建置於 2023/7/25 下午 02:39:11。
+     1>節點 3 (build 目標) 上的專案 "D:\專案\0140_Test_mulitrhead_dynamic\Dynamic_MultiThread\MainFrame\Class_Logsystem\Logsystem.vcxproj"。
+     1>InitializeBuildStatus:
+         由於指定了 "AlwaysCreate"，因此正在建立 "Debug\Class_Logsystem.unsuccessfulbuild"。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\Common\Component\TableCtrlEx /I..\Common\Component\XListBox /I..\Common\Component\XQueue /I.\Class_LogSystem /I..\Class_LogSystem /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _AFXEXT /D _WINDLL /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\Class_Logsystem.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\Common\Component\TableCtrlEx /I..\Common\Component\XListBox /I..\Common\Component\XQueue /I.\Class_LogSystem /I..\Class_LogSystem /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _AFXEXT /D _WINDLL /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Class_Logsystem.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\Common\Component\TableCtrlEx\BaseTabCtrl.cpp ..\Common\Component\TableCtrlEx\MAIN_Tab.cpp ..\Common\Component\XListBox\Clipboard.cpp ..\Common\Component\XListBox\XListBox.cpp ..\Common\Component\XQueue\XMemmap.cpp ..\Common\Component\XQueue\XQueue.cpp LogClient.cpp LogFile.cpp LogMainWindow.cpp LogMsg.cpp LogServer.cpp Class_Logsystem.cpp LogWindow.cpp
+         LogWindow.cpp
+         Class_Logsystem.cpp
+         LogServer.cpp
+         LogMsg.cpp
+         LogMainWindow.cpp
+         LogFile.cpp
+         LogClient.cpp
+         XQueue.cpp
+             compiling for MFC
+         XMemmap.cpp
+             compiling for MFC
+         XListBox.cpp
+         Clipboard.cpp
+         MAIN_Tab.cpp
+         BaseTabCtrl.cpp
+         正在產生程式碼...
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\Common\Component\TableCtrlEx /I..\Common\Component\XListBox /I..\Common\Component\XQueue /I.\Class_LogSystem /I..\Class_LogSystem /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _AFXEXT /D _WINDLL /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+         dllmain.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _AFXDLL /l"0x0404" /IDebug\ /nologo /fo"Debug\Logsystem.res" Logsystem.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\專案\0140_Test_mulitrhead_dynamic\Dynamic_MultiThread\MainFrame\Debug\Class_Logsystem.dll" /INCREMENTAL /NOLOGO /DEF:".\Class_Logsystem.def" /MANIFEST:NO /DEBUG /PDB:"D:\專案\0140_Test_mulitrhead_dynamic\Dynamic_MultiThread\MainFrame\Debug\Class_Logsystem.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\專案\0140_Test_mulitrhead_dynamic\Dynamic_MultiThread\MainFrame\Debug\Class_Logsystem.lib" /MACHINE:X86 /DLL Debug\Logsystem.res
+         Debug\BaseTabCtrl.obj
+         Debug\MAIN_Tab.obj
+         Debug\Clipboard.obj
+         Debug\XListBox.obj
+         Debug\XMemmap.obj
+         Debug\XQueue.obj
+         Debug\dllmain.obj
+         Debug\LogClient.obj
+         Debug\LogFile.obj
+         Debug\LogMainWindow.obj
+         Debug\LogMsg.obj
+         Debug\LogServer.obj
+         Debug\Class_Logsystem.obj
+         Debug\LogWindow.obj
+         Debug\stdafx.obj
+            正在建立程式庫 D:\專案\0140_Test_mulitrhead_dynamic\Dynamic_MultiThread\MainFrame\Debug\Class_Logsystem.lib 和物件 D:\專案\0140_Test_mulitrhead_dynamic\Dynamic_MultiThread\MainFrame\Debug\Class_Logsystem.exp
+         Logsystem.vcxproj -> D:\專案\0140_Test_mulitrhead_dynamic\Dynamic_MultiThread\MainFrame\Debug\Class_Logsystem.dll
+       FinalizeBuildStatus:
+         正在刪除檔案 "Debug\Class_Logsystem.unsuccessfulbuild"。
+         正在變更時間戳記 "Debug\Class_Logsystem.lastbuildstate"。
+     1>專案 "D:\專案\0140_Test_mulitrhead_dynamic\Dynamic_MultiThread\MainFrame\Class_Logsystem\Logsystem.vcxproj" (build 目標) 建置完成。
+
+建置成功。
+
+經過時間 00:00:06.17

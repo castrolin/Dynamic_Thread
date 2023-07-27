@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Component">
+      <UniqueIdentifier>{6db6db68-1a15-4762-8902-4480f778cee9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\TableCtrlEx">
+      <UniqueIdentifier>{1c463d28-58ed-4afb-86f6-04928c0c25a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\XListBox">
+      <UniqueIdentifier>{2a83236c-2a08-41cb-9cae-64ff633de94d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\XQueue">
+      <UniqueIdentifier>{36bb14bd-3914-402b-b648-b79d66e7647c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="LogClient.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="LogFile.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="LogMainWindow.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="LogMsg.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="LogServer.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="LogWindow.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Class_Logsystem.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\TableCtrlEx\BaseTabCtrl.cpp">
+      <Filter>Component\TableCtrlEx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\TableCtrlEx\MAIN_Tab.cpp">
+      <Filter>Component\TableCtrlEx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\XListBox\Clipboard.cpp">
+      <Filter>Component\XListBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\XListBox\XListBox.cpp">
+      <Filter>Component\XListBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\XQueue\XMemmap.cpp">
+      <Filter>Component\XQueue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\XQueue\XQueue.cpp">
+      <Filter>Component\XQueue</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Logsystem.rc2">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+    <None Include="Class_Logsystem.def">
+      <Filter>Source</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LogClient.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="LogFile.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="LogMainWindow.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="LogMsg.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="LogSystemImport.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="LogWindow.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="LogServer.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\TableCtrlEx\BaseTabCtrl.h">
+      <Filter>Component\TableCtrlEx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\TableCtrlEx\MAIN_Tab.h">
+      <Filter>Component\TableCtrlEx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\XListBox\Clipboard.h">
+      <Filter>Component\XListBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\XListBox\XListBox.h">
+      <Filter>Component\XListBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\XQueue\XMemmap.h">
+      <Filter>Component\XQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\XQueue\XQueue.h">
+      <Filter>Component\XQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\XQueue\XTrace.h">
+      <Filter>Component\XQueue</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Logsystem.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
