@@ -1,0 +1,752 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="原始程式檔">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="標頭檔">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="資源檔">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Class">
+      <UniqueIdentifier>{508ed559-5e48-42b8-9bc7-2c516b1e4cdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Control">
+      <UniqueIdentifier>{54ce287e-62fa-4733-8479-5c1fc1c9a95f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog">
+      <UniqueIdentifier>{0ded93a8-8971-46a8-9e87-476a8f2c2ff9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global">
+      <UniqueIdentifier>{868f96ba-af7f-4017-a517-08116729ca3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Process">
+      <UniqueIdentifier>{a6af6d1a-53e0-45cd-b6bb-cb11c3401221}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\SystemParam">
+      <UniqueIdentifier>{7147802d-9711-4ffa-ac40-3b9cb7c6acf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global\Common">
+      <UniqueIdentifier>{84b005c2-4d13-4992-9751-22b52161bf8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global\Common\CIM_Device_List">
+      <UniqueIdentifier>{56611967-1bce-4200-8639-4d8e07f95a63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\MessageBox">
+      <UniqueIdentifier>{4847324f-80c4-44a8-83a5-766186494d03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\Maintain">
+      <UniqueIdentifier>{0dc9ad41-ae8b-40d6-9258-0c3e970b749d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\Account">
+      <UniqueIdentifier>{1c957f93-120a-41ad-bcf9-282f6f193c16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\Setting">
+      <UniqueIdentifier>{fd3e1fd3-f1b0-43ca-bb35-87d48887d184}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\OptionDlg">
+      <UniqueIdentifier>{571ec151-2bc6-45df-af90-00f96eed3887}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global\Common\MotorBase">
+      <UniqueIdentifier>{06ea90db-1592-4d2d-be16-1b5d73fb8882}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global\Common\CardBase">
+      <UniqueIdentifier>{f2c706e4-3b6d-4aa8-aa79-e3a0f7babbb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global\Common\OutputBase">
+      <UniqueIdentifier>{bb909f76-7be3-4c6f-bcd1-14c7592f0760}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global\Common\CameraBase">
+      <UniqueIdentifier>{fdce1048-9de1-4b7c-8fc2-b1d247cb344a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\StepFuncDlg">
+      <UniqueIdentifier>{b7a24a55-7c75-4403-8b7d-a6558404b87a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global\Common\MotorBase\InputBase">
+      <UniqueIdentifier>{e060a0aa-4b99-4f76-8b02-4a06afc200ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component">
+      <UniqueIdentifier>{85bfda93-dc76-41cb-af38-6015dd8ae179}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\AnimateIcon">
+      <UniqueIdentifier>{1e372c2e-714f-4c87-8c2e-51bf060e95c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\ButtonST">
+      <UniqueIdentifier>{82d520b6-e40c-4f2f-ab42-66e2bce0a914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\DiskObject">
+      <UniqueIdentifier>{72a1d670-3806-4a1e-b887-83034b273ffe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\HeaderCtrl">
+      <UniqueIdentifier>{53b99c47-625d-445d-9057-ed4d2517b786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\LCD Control">
+      <UniqueIdentifier>{2db2cb4c-5dc1-4205-ad1d-ee025c462153}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\SortListCtrl">
+      <UniqueIdentifier>{ccd70ad5-520e-4cb8-ac06-7f772d71c823}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\XPGroupBox">
+      <UniqueIdentifier>{4a61f98a-dcbd-46f9-b1ed-1b41be254a73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\ScalingPicCtrl">
+      <UniqueIdentifier>{2de812f7-7bc0-4d82-80ce-67d266bb981d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\SystemStatus">
+      <UniqueIdentifier>{7a98835a-d796-4c09-a684-077ca2d839c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\ColorEdit">
+      <UniqueIdentifier>{da0c4f57-3058-41ab-b81b-7498bc56dc37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\Setting\PatternOrgSave">
+      <UniqueIdentifier>{2af4b5e6-faec-4807-8380-4d7f01ec0591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{ce8b77df-fbff-4360-aec5-48e289bb2399}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\StepFuncDlg\Robot Step">
+      <UniqueIdentifier>{93b26653-4ffd-46e5-a053-35c9557d0930}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Control\Outpt">
+      <UniqueIdentifier>{8ddff713-1de8-4c44-92c0-8877849c13cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\Input">
+      <UniqueIdentifier>{ee63e9dd-ec66-44fa-a010-6447227bb11a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\TraceDlg">
+      <UniqueIdentifier>{cf5a5a62-0bb8-47f4-a1df-7ab1ab727725}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\WinDebugMonitor">
+      <UniqueIdentifier>{02350774-08a7-4dcb-a55b-7b485e9dbd01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\OptionDlg\Manual Sel">
+      <UniqueIdentifier>{556031f7-2f7e-4bdf-9b7f-b51c0cba258c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\Setting\Recipe">
+      <UniqueIdentifier>{26a17e9b-c0ad-455d-81a8-76fc479ba656}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\LogList">
+      <UniqueIdentifier>{955da617-9dfa-441d-bee3-77b7a21c7c49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\PerformanceDlg">
+      <UniqueIdentifier>{1952d899-69e9-41b5-938e-8253a1b8a431}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Thread_Control">
+      <UniqueIdentifier>{9aa4657f-e398-4192-a55e-b04658c742be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Control\Outpt\Input">
+      <UniqueIdentifier>{e415f605-28f8-42d5-93a5-2bf33b9bc30d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\OptionDlg\Output">
+      <UniqueIdentifier>{4505bf70-cef7-421d-9a1e-c8e2d595e54a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="ControlBase.def">
+      <Filter>原始程式檔</Filter>
+    </None>
+    <None Include="res\ControlBase.rc2">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\left.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\ON.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\OFF.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Gray_Stop.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Gray_Status.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Gray_Start.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Gray_Setting.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Gray_PowerOff.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Gray_Pause.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\MinLedNone.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\MinLedGreen.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\MinLedBlue.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Gray_Initial.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Gray_Forward.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Gray_Backward.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\up.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\right.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\down.ico">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Font5x7.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\TURN_UP_RIGHT.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\TURN_UP_LEFT.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\TURN_RIGHT_UP.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\TURN_RIGHT_DOWN.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\TURN_LEFT_UP.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\TURN_LEFT_DOWN.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\TURN_DOWN_RIGHT.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\TURN_DOWN_LEFT.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Square_Light_YELLOW.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Square_Light_RED.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Square_Light_GREEN.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Square_Light_BLUE.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Rectangular_M_YELLOW.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Rectangular_Light_YELLOW.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Rectangular_M_RED.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Rectangular_Light_RED.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Rectangular_M_GREEN.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Rectangular_Light_GREEN.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Rectangular_M_BLUE.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Rectangular_Light_BLUE.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Maintain.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Large_Contrel_Logo.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\CST_Skin.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Logo.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Large_Logo.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\Formula.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\bitmap1.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="..\..\..\..\kinkyuu111.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="..\..\..\..\3333333.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+    <None Include="res\bitmap2.bmp">
+      <Filter>資源檔</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ControlBase.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>原始程式檔</Filter>
+    </ClCompile>
+    <ClCompile Include="GetRecipe.cpp">
+      <Filter>Class\SystemParam</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemParams.cpp">
+      <Filter>Class\SystemParam</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlThread.cpp">
+      <Filter>Class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CommonFunc.cpp">
+      <Filter>Global\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\PLC_Data_Structure.cpp">
+      <Filter>Global\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoThread.cpp">
+      <Filter>Process</Filter>
+    </ClCompile>
+    <ClCompile Include="Scenario.cpp">
+      <Filter>Process</Filter>
+    </ClCompile>
+    <ClCompile Include="UserAccountDlg.cpp">
+      <Filter>Dialog\Account</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemParams_Dlg.cpp">
+      <Filter>Dialog\Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalObject.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalDefine.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
+    <ClCompile Include="UserAccountEditDlg.cpp">
+      <Filter>Dialog\Account</Filter>
+    </ClCompile>
+    <ClCompile Include="MaintainPageDlg.cpp">
+      <Filter>Dialog\Maintain</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageBox.cpp">
+      <Filter>Dialog\MessageBox</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionDlg.cpp">
+      <Filter>Dialog\OptionDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\LanguageCtrl.cpp">
+      <Filter>Global\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\MotionBase\MotorBase.cpp">
+      <Filter>Global\Common\MotorBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\InputBase\InputBase.cpp">
+      <Filter>Global\Common\MotorBase\InputBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\OutputBase\OutputBase.cpp">
+      <Filter>Global\Common\OutputBase</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemStatusDlg.cpp">
+      <Filter>Dialog\SystemStatus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CardBase\CardBase.cpp">
+      <Filter>Global\Common\CardBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\CameraBase\CameraBase.cpp">
+      <Filter>Global\Common\CameraBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\InputBase\AnalogInputBase.cpp">
+      <Filter>Global\Common\MotorBase\InputBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\OutputBase\AnalogOutputBase.cpp">
+      <Filter>Global\Common\OutputBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\AnimateIcon\AnimateIcon.cpp">
+      <Filter>Component\AnimateIcon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\ButtonST\BCMenu.cpp">
+      <Filter>Component\ButtonST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\ButtonST\BtnST.cpp">
+      <Filter>Component\ButtonST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\ButtonST\CeXDib.cpp">
+      <Filter>Component\ButtonST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\ButtonST\ShadeButtonST.cpp">
+      <Filter>Component\ButtonST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\DiskObject\DiskObject.cpp">
+      <Filter>Component\DiskObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\HeaderCtrl\HeaderCtrlExt.cpp">
+      <Filter>Component\HeaderCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\LCD Control\COLOR.CPP">
+      <Filter>Component\LCD Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\LCD Control\GdiBorder.cpp">
+      <Filter>Component\LCD Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\LCD Control\IsiCompBase.cpp">
+      <Filter>Component\LCD Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\LCD Control\IsiLcdDisplay.cpp">
+      <Filter>Component\LCD Control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\SortListCtrl\SortHeaderCtrl.cpp">
+      <Filter>Component\SortListCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\SortListCtrl\SortListCtrl.cpp">
+      <Filter>Component\SortListCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\XPGroupBox\XPGroupBox.cpp">
+      <Filter>Component\XPGroupBox</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemControlBase.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageBoxCRC.cpp">
+      <Filter>Dialog\MessageBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\SystemCodeCtrl.cpp">
+      <Filter>Global\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\ScalingPicCtrl\ScalingPicCtrl.cpp">
+      <Filter>Component\ScalingPicCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="MaintainPageLevelCheckDlg.cpp">
+      <Filter>Dialog\Maintain</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageBoxYC.cpp">
+      <Filter>Dialog\MessageBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\ColorEdit\ColorEdit.cpp">
+      <Filter>Component\ColorEdit</Filter>
+    </ClCompile>
+    <ClCompile Include="PatternOrgSaveDlg.cpp">
+      <Filter>Dialog\Setting\PatternOrgSave</Filter>
+    </ClCompile>
+    <ClCompile Include="AlignmentProcess.cpp">
+      <Filter>Process</Filter>
+    </ClCompile>
+    <ClCompile Include="Input_Ctrl.cpp">
+      <Filter>Control\Outpt\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Output_Ctrl.cpp">
+      <Filter>Control\Outpt</Filter>
+    </ClCompile>
+    <ClCompile Include="InputTestDlg.cpp">
+      <Filter>Dialog\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputTestDlg.cpp">
+      <Filter>Dialog\OptionDlg\Output</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemTraceDlg.cpp">
+      <Filter>Dialog\TraceDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Component\WinDebugMonitor\WinDebugMonitor.cpp">
+      <Filter>Component\WinDebugMonitor</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionManualSelDlg.cpp">
+      <Filter>Dialog\OptionDlg\Manual Sel</Filter>
+    </ClCompile>
+    <ClCompile Include="RecipeSettingDlg.cpp">
+      <Filter>Dialog\Setting\Recipe</Filter>
+    </ClCompile>
+    <ClCompile Include="RecipeListDlg.cpp">
+      <Filter>Dialog\Setting\Recipe</Filter>
+    </ClCompile>
+    <ClCompile Include="RecipeSettingCurrentDlg.cpp">
+      <Filter>Dialog\Setting\Recipe</Filter>
+    </ClCompile>
+    <ClCompile Include="LogListDlg.cpp">
+      <Filter>Dialog\LogList</Filter>
+    </ClCompile>
+    <ClCompile Include="PerformanceLog.cpp">
+      <Filter>Global</Filter>
+    </ClCompile>
+    <ClCompile Include="StepProcess.cpp">
+      <Filter>Process</Filter>
+    </ClCompile>
+    <ClCompile Include="PerformanceDlg.cpp">
+      <Filter>Dialog\PerformanceDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="ProductDataDef.cpp">
+      <Filter>Global\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Dynamic_Thread.cpp">
+      <Filter>Thread_Control</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ControlBase.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemControlBase.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="GetRecipe.h">
+      <Filter>Class\SystemParam</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemParams.h">
+      <Filter>Class\SystemParam</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlThread.h">
+      <Filter>Class</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CIM_DeviceList\InlineMapEC.h">
+      <Filter>Global\Common\CIM_Device_List</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CIM_DeviceList\InlineMapED.h">
+      <Filter>Global\Common\CIM_Device_List</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CIM_DeviceList\InlineMapEG.h">
+      <Filter>Global\Common\CIM_Device_List</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CIM_DeviceList\InlineMapES.h">
+      <Filter>Global\Common\CIM_Device_List</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CIM_DeviceList\InlineMapEW.h">
+      <Filter>Global\Common\CIM_Device_List</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CIM_DeviceList\InlineMapHC.h">
+      <Filter>Global\Common\CIM_Device_List</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CIM_DeviceList\InlineMapHD.h">
+      <Filter>Global\Common\CIM_Device_List</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CIM_DeviceList\InlineMapHG.h">
+      <Filter>Global\Common\CIM_Device_List</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CIM_DeviceList\InlineMapLinkSignal_B.h">
+      <Filter>Global\Common\CIM_Device_List</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CIM_DeviceList\InlineMapLinkSignal_W.h">
+      <Filter>Global\Common\CIM_Device_List</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CommonFunc.h">
+      <Filter>Global\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\PLC_Data_Structure.h">
+      <Filter>Global\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Scenario.h">
+      <Filter>Process</Filter>
+    </ClInclude>
+    <ClInclude Include="UserAccountDlg.h">
+      <Filter>Dialog\Account</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemStatusDlg.h">
+      <Filter>Dialog\SystemStatus</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemParams_Dlg.h">
+      <Filter>Dialog\Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalObject.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalDefine.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="UserAccountEditDlg.h">
+      <Filter>Dialog\Account</Filter>
+    </ClInclude>
+    <ClInclude Include="MaintainPageDlg.h">
+      <Filter>Dialog\Maintain</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageBox.h">
+      <Filter>Dialog\MessageBox</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionDlg.h">
+      <Filter>Dialog\OptionDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\LanguageCtrl.h">
+      <Filter>Global\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MotionBase\MotorBase.h">
+      <Filter>Global\Common\MotorBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\InputBase\InputBase.h">
+      <Filter>Global\Common\MotorBase\InputBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\OutputBase\OutputBase.h">
+      <Filter>Global\Common\OutputBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\MessageDef.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CardBase\CardBase.h">
+      <Filter>Global\Common\CardBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\CameraBase\CameraBase.h">
+      <Filter>Global\Common\CameraBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\InputBase\AnalogInputBase.h">
+      <Filter>Global\Common\MotorBase\InputBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\OutputBase\AnalogOutputBase.h">
+      <Filter>Global\Common\OutputBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\ProductDataDef.h">
+      <Filter>Global\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\AnimateIcon\AnimateIcon.h">
+      <Filter>Component\AnimateIcon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\ButtonST\BCMenu.h">
+      <Filter>Component\ButtonST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\ButtonST\BtnST.h">
+      <Filter>Component\ButtonST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\ButtonST\CeXDib.h">
+      <Filter>Component\ButtonST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\ButtonST\ShadeButtonST.h">
+      <Filter>Component\ButtonST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\DiskObject\DiskObject.h">
+      <Filter>Component\DiskObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\HeaderCtrl\HeaderCtrlExt.h">
+      <Filter>Component\HeaderCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\LCD Control\COLOR.H">
+      <Filter>Component\LCD Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\LCD Control\GdiBorder.h">
+      <Filter>Component\LCD Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\LCD Control\GdiPlusWnd.h">
+      <Filter>Component\LCD Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\LCD Control\IsiCompBase.h">
+      <Filter>Component\LCD Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\LCD Control\IsiLcdDisplay.h">
+      <Filter>Component\LCD Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\LCD Control\MemDC.h">
+      <Filter>Component\LCD Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\LCD Control\RoundRect.h">
+      <Filter>Component\LCD Control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\SortListCtrl\SortHeaderCtrl.h">
+      <Filter>Component\SortListCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\SortListCtrl\SortListCtrl.h">
+      <Filter>Component\SortListCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\XPGroupBox\XPGroupBox.h">
+      <Filter>Component\XPGroupBox</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageBoxCRC.h">
+      <Filter>Dialog\MessageBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\SystemCodeCtrl.h">
+      <Filter>Global\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\ScalingPicCtrl\ScalingPicCtrl.h">
+      <Filter>Component\ScalingPicCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="MaintainPageLevelCheckDlg.h">
+      <Filter>Dialog\Maintain</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoThread.h">
+      <Filter>Process</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageBoxYC.h">
+      <Filter>Dialog\MessageBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\ColorEdit\ColorEdit.h">
+      <Filter>Component\ColorEdit</Filter>
+    </ClInclude>
+    <ClInclude Include="PatternOrgSaveDlg.h">
+      <Filter>Dialog\Setting\PatternOrgSave</Filter>
+    </ClInclude>
+    <ClInclude Include="AlignmentProcess.h">
+      <Filter>Process</Filter>
+    </ClInclude>
+    <ClInclude Include="Input_Ctrl.h">
+      <Filter>Control\Outpt\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Output_Ctrl.h">
+      <Filter>Control\Outpt</Filter>
+    </ClInclude>
+    <ClInclude Include="InputTestDlg.h">
+      <Filter>Dialog\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputTestDlg.h">
+      <Filter>Dialog\OptionDlg\Output</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemTraceDlg.h">
+      <Filter>Dialog\TraceDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Component\WinDebugMonitor\WinDebugMonitor.h">
+      <Filter>Component\WinDebugMonitor</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionManualSelDlg.h">
+      <Filter>Dialog\OptionDlg\Manual Sel</Filter>
+    </ClInclude>
+    <ClInclude Include="RecipeSettingDlg.h">
+      <Filter>Dialog\Setting\Recipe</Filter>
+    </ClInclude>
+    <ClInclude Include="RecipeListDlg.h">
+      <Filter>Dialog\Setting\Recipe</Filter>
+    </ClInclude>
+    <ClInclude Include="RecipeSettingCurrentDlg.h">
+      <Filter>Dialog\Setting\Recipe</Filter>
+    </ClInclude>
+    <ClInclude Include="LogListDlg.h">
+      <Filter>Dialog\LogList</Filter>
+    </ClInclude>
+    <ClInclude Include="PerformanceLog.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="StepProcess.h">
+      <Filter>Process</Filter>
+    </ClInclude>
+    <ClInclude Include="PerformanceDlg.h">
+      <Filter>Dialog\PerformanceDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="Dynamic_Thread.h">
+      <Filter>Thread_Control</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ControlBase.rc">
+      <Filter>資源檔</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{060F246E-1F56-45EC-829B-7CF56A2F6D72}</ProjectGuid>
+    <RootNamespace>ControlBase</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;_AFXEXT;USE_ADVANTECH_DAQ;USE_HIKVISION_GIGE;USE_EPSON_RC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(MVCAM_COMMON_RUNENV)\Includes;..\Common;..\Common\CIM_DeviceList;..\Common\CardBase;..\Common\MotionBase;..\Common\InputBase;..\Common\OutputBase;..\Common\CameraBase;..\Common\Component\AnimateIcon;..\Common\Component\ButtonST;..\Common\Component\ColorEdit;..\Common\Component\DiskObject;..\Common\Component\GridCtrl;..\Common\Component\HeaderCtrl;..\Common\Component\LCD Control;..\Common\Component\ScalingPicCtrl;..\Common\Component\SortListCtrl;..\Common\Component\XListBox;..\Common\Component\XPGroupBox;..\Common\Component\OpenCV\include;..\Common\Component\OpenCV\include\opencv;..\Common\Component\OpenCV\include\opencv2;..\Common\Component\TableCtrlEx;..\Class_DBComponent;..\Class_Logsystem;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4819</DisableSpecificWarnings>
+      <AdditionalOptions>/Zm128 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\ControlBase.def</ModuleDefinitionFile>
+      <AdditionalDependencies>gdiplus.lib;Class_Logsystem.lib;Class_DBComponent.lib;opencv_core330d.lib;opencv_highgui330d.lib;opencv_imgcodecs330d.lib;opencv_imgproc330d.lib;opencv_features2d330d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Common\Component\OpenCV\x86\vc9\lib;$(OutDir)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\sentech\StGigE-Package\StGigE SDK\Includes;C:\Program Files %28x86%29\CONTEC\API-PAC%28W32%29\DIOWDM\Samples\Inc;C:\Program Files %28x86%29\ADLINK\PCI-8164\Library\Include;$(PYLON_ROOT)\include;$(PYLON_GENICAM_ROOT)\library\CPP\include;C:\Program Files (x86)\Advantech\Common Motion\Public;..\Common;..\Common\CIM_DeviceList;..\Common\CardBase;..\Common\MotionBase;..\Common\InputBase;..\Common\OutputBase;..\Common\CameraBase;..\ControlBase\Component\AnimateIcon;..\ControlBase\Component\ButtonST;..\ControlBase\Component\DiskObject;..\ControlBase\Component\GridCtrl;..\ControlBase\Component\HeaderCtrl;..\ControlBase\Component\LCD Control;..\ControlBase\Component\SortListCtrl;..\ControlBase\Component\XListBox;..\ControlBase\Component\XPGroupBox;..\App_Communication_CCLink;..\App_Communication_RS232;..\App_Communication_TCPIP_Client;..\App_Communication_TCPIP_Server;..\App_PLCCommunication_TCPIP;..\App_PLCCommunication_TCPIP\EtherNet;..\App_PLCCommunication_TCPIP\OLD_Serial;..\App_PLCCommunication_TCPIP\PLC;..\App_PLCCommunication_TCPIP\Serial;..\App_RemoteDesktop_MSTSCAX;..\App_ImageGrabber_Basler_GigE;..\App_ImageGrabber_Basler_GigE\Component\OpenCV\include;..\App_ImageGrabber_Basler_GigE\Component\OpenCV\include\opencv;..\App_ImageGrabber_Basler_GigE\Component\OpenCV\include\opencv2;..\App_ImageGrabber_Sentec_GigE;..\Class_Logsystem;..\Class_Logsystem\Component\TableCtrlEx;..\Class_DBComponent;..\Class_IO_Contec;..\Class_Motion_Adlink8164;..\Class_Motion_Advantech_PCI1203;..\Class_Motion_Mitsubishi_MC2XX;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4819</DisableSpecificWarnings>
+      <AdditionalOptions>/Zm128 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>.\ControlBase.def</ModuleDefinitionFile>
+      <AdditionalDependencies>gdiplus.lib;ADVMOT.lib;App_Communication_CCLink.lib;App_Communication_RS232.lib;App_Communication_TCPIP_Client.lib;App_Communication_TCPIP_Server.lib;App_PLCCommunication_TCPIP.lib;App_RemoteDesktop_MSTSCAX.lib;App_ImageGrabber_Basler_GigE.lib;App_ImageGrabber_Sentec_GigE.lib;Class_Logsystem.lib;Class_DBComponent.lib;Class_IO_Contec.lib;Class_Motion_Adlink8164.lib;Class_Motion_Advantech_PCI1203.lib;Class_Motion_Mitsubishi_MC2XX.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Program Files (x86)\sentech\StGigE-Package\StGigE SDK\Libraries;C:\Program Files\Basler\pylon 4\pylon\lib\Win32;C:\Program Files\Basler\pylon 4\genicam\library\cpp\lib\win32_i86;C:\Program Files (x86)\Advantech\Common Motion\Public;..\App_ImageGrabber_Basler_GigE\Component\OpenCV\x86\vc9\lib;..\App_OpenGL\Opengl Ext lib\lib;$(OutDir)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\ControlBase.def</ModuleDefinitionFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>.\ControlBase.def</ModuleDefinitionFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0404</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\3333333.bmp" />
+    <None Include="..\..\..\..\kinkyuu111.bmp" />
+    <None Include="ControlBase.def" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\bitmap2.bmp" />
+    <None Include="res\ControlBase.rc2" />
+    <None Include="res\CST_Skin.bmp" />
+    <None Include="res\down.ico" />
+    <None Include="res\Font5x7.bmp" />
+    <None Include="res\Formula.bmp" />
+    <None Include="res\Gray_Backward.ico" />
+    <None Include="res\Gray_Forward.ico" />
+    <None Include="res\Gray_Initial.ico" />
+    <None Include="res\Gray_Pause.ico" />
+    <None Include="res\Gray_PowerOff.ico" />
+    <None Include="res\Gray_Setting.ico" />
+    <None Include="res\Gray_Start.ico" />
+    <None Include="res\Gray_Status.ico" />
+    <None Include="res\Gray_Stop.ico" />
+    <None Include="res\Large_Contrel_Logo.bmp" />
+    <None Include="res\Large_Logo.bmp" />
+    <None Include="res\left.ico" />
+    <None Include="res\Logo.bmp" />
+    <None Include="res\Maintain.bmp" />
+    <None Include="res\MinLedBlue.ico" />
+    <None Include="res\MinLedGreen.ico" />
+    <None Include="res\MinLedNone.ico" />
+    <None Include="res\OFF.ico" />
+    <None Include="res\ON.ico" />
+    <None Include="res\Rectangular_Light_BLUE.bmp" />
+    <None Include="res\Rectangular_Light_GREEN.bmp" />
+    <None Include="res\Rectangular_Light_RED.bmp" />
+    <None Include="res\Rectangular_Light_YELLOW.bmp" />
+    <None Include="res\Rectangular_M_BLUE.bmp" />
+    <None Include="res\Rectangular_M_GREEN.bmp" />
+    <None Include="res\Rectangular_M_RED.bmp" />
+    <None Include="res\Rectangular_M_YELLOW.bmp" />
+    <None Include="res\right.ico" />
+    <None Include="res\Square_Light_BLUE.bmp" />
+    <None Include="res\Square_Light_GREEN.bmp" />
+    <None Include="res\Square_Light_RED.bmp" />
+    <None Include="res\Square_Light_YELLOW.bmp" />
+    <None Include="res\TURN_DOWN_LEFT.bmp" />
+    <None Include="res\TURN_DOWN_RIGHT.bmp" />
+    <None Include="res\TURN_LEFT_DOWN.bmp" />
+    <None Include="res\TURN_LEFT_UP.bmp" />
+    <None Include="res\TURN_RIGHT_DOWN.bmp" />
+    <None Include="res\TURN_RIGHT_UP.bmp" />
+    <None Include="res\TURN_UP_LEFT.bmp" />
+    <None Include="res\TURN_UP_RIGHT.bmp" />
+    <None Include="res\up.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Common\CameraBase\CameraBase.cpp" />
+    <ClCompile Include="..\Common\CardBase\CardBase.cpp" />
+    <ClCompile Include="..\Common\CommonFunc.cpp" />
+    <ClCompile Include="..\Common\Component\AnimateIcon\AnimateIcon.cpp" />
+    <ClCompile Include="..\Common\Component\ButtonST\BCMenu.cpp" />
+    <ClCompile Include="..\Common\Component\ButtonST\BtnST.cpp" />
+    <ClCompile Include="..\Common\Component\ButtonST\CeXDib.cpp" />
+    <ClCompile Include="..\Common\Component\ButtonST\ShadeButtonST.cpp" />
+    <ClCompile Include="..\Common\Component\ColorEdit\ColorEdit.cpp" />
+    <ClCompile Include="..\Common\Component\DiskObject\DiskObject.cpp" />
+    <ClCompile Include="..\Common\Component\HeaderCtrl\HeaderCtrlExt.cpp" />
+    <ClCompile Include="..\Common\Component\LCD Control\COLOR.CPP" />
+    <ClCompile Include="..\Common\Component\LCD Control\GdiBorder.cpp" />
+    <ClCompile Include="..\Common\Component\LCD Control\IsiCompBase.cpp" />
+    <ClCompile Include="..\Common\Component\LCD Control\IsiLcdDisplay.cpp" />
+    <ClCompile Include="..\Common\Component\ScalingPicCtrl\ScalingPicCtrl.cpp" />
+    <ClCompile Include="..\Common\Component\SortListCtrl\SortHeaderCtrl.cpp" />
+    <ClCompile Include="..\Common\Component\SortListCtrl\SortListCtrl.cpp" />
+    <ClCompile Include="..\Common\Component\WinDebugMonitor\WinDebugMonitor.cpp" />
+    <ClCompile Include="..\Common\Component\XPGroupBox\XPGroupBox.cpp" />
+    <ClCompile Include="..\Common\InputBase\AnalogInputBase.cpp" />
+    <ClCompile Include="..\Common\InputBase\InputBase.cpp" />
+    <ClCompile Include="..\Common\LanguageCtrl.cpp" />
+    <ClCompile Include="..\Common\MotionBase\MotorBase.cpp" />
+    <ClCompile Include="..\Common\OutputBase\AnalogOutputBase.cpp" />
+    <ClCompile Include="..\Common\OutputBase\OutputBase.cpp" />
+    <ClCompile Include="..\Common\PLC_Data_Structure.cpp" />
+    <ClCompile Include="..\Common\SystemCodeCtrl.cpp" />
+    <ClCompile Include="AlignmentProcess.cpp" />
+    <ClCompile Include="AutoThread.cpp" />
+    <ClCompile Include="ControlBase.cpp" />
+    <ClCompile Include="ControlThread.cpp" />
+    <ClCompile Include="Dynamic_Thread.cpp" />
+    <ClCompile Include="LogListDlg.cpp" />
+    <ClCompile Include="PerformanceDlg.cpp" />
+    <ClCompile Include="PerformanceLog.cpp" />
+    <ClCompile Include="ProductDataDef.cpp" />
+    <ClCompile Include="RecipeSettingCurrentDlg.cpp" />
+    <ClCompile Include="GetRecipe.cpp" />
+    <ClCompile Include="GlobalDefine.cpp" />
+    <ClCompile Include="GlobalObject.cpp" />
+    <ClCompile Include="InputTestDlg.cpp" />
+    <ClCompile Include="Input_Ctrl.cpp" />
+    <ClCompile Include="MaintainPageDlg.cpp" />
+    <ClCompile Include="MaintainPageLevelCheckDlg.cpp" />
+    <ClCompile Include="MessageBox.cpp" />
+    <ClCompile Include="MessageBoxCRC.cpp" />
+    <ClCompile Include="MessageBoxYC.cpp" />
+    <ClCompile Include="OptionDlg.cpp" />
+    <ClCompile Include="OptionManualSelDlg.cpp" />
+    <ClCompile Include="OutputTestDlg.cpp" />
+    <ClCompile Include="Output_Ctrl.cpp" />
+    <ClCompile Include="PatternOrgSaveDlg.cpp" />
+    <ClCompile Include="RecipeListDlg.cpp" />
+    <ClCompile Include="RecipeSettingDlg.cpp" />
+    <ClCompile Include="Scenario.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StepProcess.cpp" />
+    <ClCompile Include="SystemControlBase.cpp" />
+    <ClCompile Include="SystemParams.cpp" />
+    <ClCompile Include="SystemParams_Dlg.cpp" />
+    <ClCompile Include="SystemStatusDlg.cpp" />
+    <ClCompile Include="SystemTraceDlg.cpp" />
+    <ClCompile Include="UserAccountDlg.cpp" />
+    <ClCompile Include="UserAccountEditDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\CameraBase\CameraBase.h" />
+    <ClInclude Include="..\Common\CardBase\CardBase.h" />
+    <ClInclude Include="..\Common\CIM_DeviceList\InlineMapEC.h" />
+    <ClInclude Include="..\Common\CIM_DeviceList\InlineMapED.h" />
+    <ClInclude Include="..\Common\CIM_DeviceList\InlineMapEG.h" />
+    <ClInclude Include="..\Common\CIM_DeviceList\InlineMapES.h" />
+    <ClInclude Include="..\Common\CIM_DeviceList\InlineMapEW.h" />
+    <ClInclude Include="..\Common\CIM_DeviceList\InlineMapHC.h" />
+    <ClInclude Include="..\Common\CIM_DeviceList\InlineMapHD.h" />
+    <ClInclude Include="..\Common\CIM_DeviceList\InlineMapHG.h" />
+    <ClInclude Include="..\Common\CIM_DeviceList\InlineMapLinkSignal_B.h" />
+    <ClInclude Include="..\Common\CIM_DeviceList\InlineMapLinkSignal_W.h" />
+    <ClInclude Include="..\Common\CommonFunc.h" />
+    <ClInclude Include="..\Common\Component\AnimateIcon\AnimateIcon.h" />
+    <ClInclude Include="..\Common\Component\ButtonST\BCMenu.h" />
+    <ClInclude Include="..\Common\Component\ButtonST\BtnST.h" />
+    <ClInclude Include="..\Common\Component\ButtonST\CeXDib.h" />
+    <ClInclude Include="..\Common\Component\ButtonST\ShadeButtonST.h" />
+    <ClInclude Include="..\Common\Component\ColorEdit\ColorEdit.h" />
+    <ClInclude Include="..\Common\Component\DiskObject\DiskObject.h" />
+    <ClInclude Include="..\Common\Component\HeaderCtrl\HeaderCtrlExt.h" />
+    <ClInclude Include="..\Common\Component\LCD Control\COLOR.H" />
+    <ClInclude Include="..\Common\Component\LCD Control\GdiBorder.h" />
+    <ClInclude Include="..\Common\Component\LCD Control\GdiPlusWnd.h" />
+    <ClInclude Include="..\Common\Component\LCD Control\IsiCompBase.h" />
+    <ClInclude Include="..\Common\Component\LCD Control\IsiLcdDisplay.h" />
+    <ClInclude Include="..\Common\Component\LCD Control\MemDC.h" />
+    <ClInclude Include="..\Common\Component\LCD Control\RoundRect.h" />
+    <ClInclude Include="..\Common\Component\ScalingPicCtrl\ScalingPicCtrl.h" />
+    <ClInclude Include="..\Common\Component\SortListCtrl\SortHeaderCtrl.h" />
+    <ClInclude Include="..\Common\Component\SortListCtrl\SortListCtrl.h" />
+    <ClInclude Include="..\Common\Component\WinDebugMonitor\WinDebugMonitor.h" />
+    <ClInclude Include="..\Common\Component\XPGroupBox\XPGroupBox.h" />
+    <ClInclude Include="..\Common\InputBase\AnalogInputBase.h" />
+    <ClInclude Include="..\Common\InputBase\InputBase.h" />
+    <ClInclude Include="..\Common\LanguageCtrl.h" />
+    <ClInclude Include="..\Common\MessageDef.h" />
+    <ClInclude Include="..\Common\MotionBase\MotorBase.h" />
+    <ClInclude Include="..\Common\OutputBase\AnalogOutputBase.h" />
+    <ClInclude Include="..\Common\OutputBase\OutputBase.h" />
+    <ClInclude Include="..\Common\PLC_Data_Structure.h" />
+    <ClInclude Include="..\Common\ProductDataDef.h" />
+    <ClInclude Include="..\Common\SystemCodeCtrl.h" />
+    <ClInclude Include="AlignmentProcess.h" />
+    <ClInclude Include="AutoThread.h" />
+    <ClInclude Include="ControlBase.h" />
+    <ClInclude Include="ControlThread.h" />
+    <ClInclude Include="Dynamic_Thread.h" />
+    <ClInclude Include="LogListDlg.h" />
+    <ClInclude Include="PerformanceDlg.h" />
+    <ClInclude Include="PerformanceLog.h" />
+    <ClInclude Include="RecipeSettingCurrentDlg.h" />
+    <ClInclude Include="GetRecipe.h" />
+    <ClInclude Include="GlobalDefine.h" />
+    <ClInclude Include="GlobalObject.h" />
+    <ClInclude Include="InputTestDlg.h" />
+    <ClInclude Include="Input_Ctrl.h" />
+    <ClInclude Include="MaintainPageDlg.h" />
+    <ClInclude Include="MaintainPageLevelCheckDlg.h" />
+    <ClInclude Include="MessageBox.h" />
+    <ClInclude Include="MessageBoxCRC.h" />
+    <ClInclude Include="MessageBoxYC.h" />
+    <ClInclude Include="OptionDlg.h" />
+    <ClInclude Include="OptionManualSelDlg.h" />
+    <ClInclude Include="OutputTestDlg.h" />
+    <ClInclude Include="Output_Ctrl.h" />
+    <ClInclude Include="PatternOrgSaveDlg.h" />
+    <ClInclude Include="RecipeListDlg.h" />
+    <ClInclude Include="RecipeSettingDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Scenario.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="StepProcess.h" />
+    <ClInclude Include="SystemControlBase.h" />
+    <ClInclude Include="SystemParams.h" />
+    <ClInclude Include="SystemParams_Dlg.h" />
+    <ClInclude Include="SystemStatusDlg.h" />
+    <ClInclude Include="SystemTraceDlg.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UserAccountDlg.h" />
+    <ClInclude Include="UserAccountEditDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ControlBase.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="ControlBase.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
